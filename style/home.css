@@ -11,6 +11,18 @@
       padding-top: 80px;
     }
 }
+@media screen and (max-width: 768px) {
+    .home__body {
+      padding-top: 68px;
+      max-width: 632px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .home__body {
+      display: flex;
+      flex-wrap: wrap;
+    }
+}
 .home__title {
     display: flex;
     font-weight: 600;
@@ -23,6 +35,14 @@
         font-weight: 600;
         font-size: 48px;
         line-height: 133.333%;
+        text-align: left;
+    }
+}
+@media screen and (max-width: 768px) {
+    .home__title  {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 125%;
         text-align: left;
     }
 }
@@ -49,36 +69,75 @@
       font-size: 20px;
     }
 }
+@media screen and (max-width: 768px) {
+    .home__text  {
+      padding-top: 25px;
+      padding-bottom: 32px;
+      font-size: 16px;
+    }
+}
 .home__icon {
 
 }
 .home__buttons {
-    height: 118px;
-    width: 438px;
+    padding: 32px 118px;
     border-radius: 15px;
     background: rgb(38, 50, 56);
     max-width: 438px;
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    transition: all 0.3s ease 0s;
 }
+.home__buttons:hover {
+    background-color: rgb(25, 33, 37);
+    color: rgb(255, 255, 255);
+    border-color:rgb(38, 50, 56); 
+}
+
+
 @media screen and (max-width: 993px) {
     .home__buttons  {
-        height: 80px;
-        width: 292px;
+        padding: 32px 118px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .home__buttons  {
+        padding: 25px 100px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
     }
 }
 .__button {
 
 }
-.home__button {
-    color: rgb(255, 255, 255);
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 150px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+
 
 .home__img {
     padding-top: 50px;
     margin-left: 142px;
+}
+@media screen and (max-width: 993px) {
+    .home__img  {
+        padding-top: 30px;
+        margin-left: 122px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .home__img  {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home__img  {
+    
+        
+    }
 }
