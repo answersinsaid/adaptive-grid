@@ -1,9 +1,12 @@
 .home {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 .home__body {
     padding-top: 115px;
+    width: 50%;
     max-width: 632px;
 }
 @media screen and (max-width: 993px) {
@@ -15,20 +18,29 @@
     .home__body {
       padding-top: 68px;
       max-width: 632px;
+      width: 50%;
+      height: 50%;
     }
 }
 @media screen and (max-width: 576px) {
-    .home__body {
-      display: flex;
-      flex-wrap: wrap;
+    .home {
+        flex-direction: column-reverse;
     }
+    .home__body {
+     display: flex;
+     flex-wrap: wrap;
+     width: 100%;
+     padding-top: 18px;
+      }
 }
+
 .home__title {
     display: flex;
     font-weight: 600;
     font-size: 64px;
     line-height: 125%;
     text-align: left;
+    position: relative;
 }
 @media screen and (max-width: 993px) {
     .home__title  {
@@ -46,11 +58,33 @@
         text-align: left;
     }
 }
-.title-block__content{
+@media screen and (max-width: 576px) {
+.home__title {
+    display: flex;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 125%;
+    padding-left: 40;
+    padding-right: 40;
+  }
+}
 
+@media screen and (max-width: 321px) {
+    .home__title  {
+     font-size: 24px;
+   }
+}
+.title-block__content{
+    max-width: 390px;
+}
+.title-block__icon-wrapper{
+    padding-bottom: 28px;
+    margin-top: auto;
 }
 .title-block__icon {
-    padding-top: 75px;
+    width: 85px;
+    height: 85px;
+    display: block;
 }
 .home__text {
     padding-top: 40px;
@@ -76,11 +110,23 @@
       font-size: 16px;
     }
 }
-.home__icon {
-
+@media screen and (max-width: 576px) {
+    .home__text  {
+        padding-top: 25px;
+        padding-bottom: 35px;
+        font-size: 16px;
+    }
 }
+@media screen and (max-width: 321px) {
+    .home__text  {
+        padding-top: 20px;
+        padding-bottom: 35px;
+        font-size: 14px;
+}
+}
+
 .home__buttons {
-    padding: 32px 118px;
+    padding: 22px 112px;
     border-radius: 15px;
     background: rgb(38, 50, 56);
     max-width: 438px;
@@ -100,16 +146,42 @@
 
 @media screen and (max-width: 993px) {
     .home__buttons  {
-        padding: 32px 118px;
+        padding: 22px 80px;
         font-size: 24px;
         font-weight: 400;
         line-height: 150%;
     }
+    .home__img-wrapper {
+       
+
+    }
+    .home__img {
+        width: 460px;
+        height: 460px;
+    }
 }
 @media screen and (max-width: 768px) {
     .home__buttons  {
-        padding: 25px 100px;
+        padding: 20px 70px;
         font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+}
+    @media screen and (max-width: 576px) {    
+    .home__buttons  {
+        padding: 24px 100px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 150%;
+        margin: auto;
+
+    }
+}
+@media screen and (max-width: 321px) {
+    .home__buttons  {
+        padding: 19px 99px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 150%;
     }
@@ -117,27 +189,83 @@
 .__button {
 
 }
+.home__img-wrapper {
 
+}
 
 .home__img {
-    padding-top: 50px;
-    margin-left: 142px;
+
+
 }
 @media screen and (max-width: 993px) {
+    ._container {
+        padding-left: 30px ;
+        padding-right: 30px;
+        }
+    .home__img-wrapper {
+        width: 50%;
+        }
     .home__img  {
-        padding-top: 30px;
-        margin-left: 122px;
+        width: 100%;
+        max-width: 460px;
+    }
+    .title-block__icon {
+        width: 58px;
+        height: 58px;
+        display: block;
     }
 }
 @media screen and (max-width: 768px) {
+    ._container {
+        padding-left: 40px ;
+        padding-right: 40px;
+      }
+    .home__img-wrapper {
+        width: 50%;
+    }
     .home__img  {
-        margin-left: 20px;
+        width: 100%;
+        max-width: 352px;
+    }
+    .title-block__icon {
+        width: 50px;
+        height: 50px;
+        display: block;
     }
 }
 
+
 @media screen and (max-width: 576px) {
+    ._container {
+        padding-left: 30px ;
+        padding-right: 30px;
+      }
+      .home__img-wrapper {
+        width: 100%;
+      }
     .home__img  {
-    
-        
+    width: 100%;
+    max-width: 424px;
+    }
+    .title-block__icon {
+        display: none;
+    }
+}
+@media screen and (max-width: 321px) {
+    ._container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .title-block__icon {
+        display: none;
+    }
+    .home__img-wrapper {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    .home__img  {
+        width: 100%;
+        max-width: 299px;
     }
 }
